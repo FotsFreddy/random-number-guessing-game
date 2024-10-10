@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3.5em;
+    padding: 20px 0 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+p.instructions{
+    font-size: 2em;
+    font-family: 'MyriadPro',sans-serif;
+    font-weight: bolder;
+}
+li{
+    font-size: 1.5em;
+    font-family:  Helvetica, serif;
+    line-height: 1.5;
+}
+ul{
+    padding: 10px 0 20px 0;
+}
+button{
+    font-size: 1.3em;
+    padding: 5px 20px;
+    background-color: #00aeef;
+    border: 1px solid #000;
+    border-radius: 7px;
+}
+button:active{
+    position: relative;
+    top: 1px;
+}
+div.multipleChoices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #004498;
+    padding: 15px 25px;
+    margin-top: 10px;
+}
+div.multipleChoices>p, button{
+    font-family: 'Agency FB',sans-serif;
+    font-weight: 600;
+}
+div.multipleChoices>p{
+    font-size: 2em;
+    color: #fff;  
+    margin-bottom: 7px;  
+}
+div.multipleChoices, div[class*="choice"]{
+    border-radius: 20px;
+}
+div[class*="choice"]{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 280px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+div[class*="choice"]:hover,button[type="submit"]:hover{
+    box-shadow: 0px 0px 7px #fff;
+}
+input{
+    width: 25px;
+    height: 20px;
+}
+label{
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+label,p#score{
+    font-size: 1.2em;
+}
+p#score{
+    padding: 10px;
+}
+div[class*="choice"].green{
+    background-color: #059200;;
+}
+div[class*="choice"].red{
+    background-color: #ec0808;;
+}

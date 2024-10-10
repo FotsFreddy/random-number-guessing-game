@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="C:\Users\FOTSO KOMGUEM FREDDY\Pictures\Saved Pictures\random_num_logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h1>Random Number Guessing Game</h1>
+        <p class="instructions">Instructions:</p>
+        <ul>
+            <li>Click on the button below to randomly generate a number in the interval [1;10]</li>
+            <li>Choose a number between the options below and submit</li>
+        </ul>
+        <button id="generateNumberBtn">Click to generate</button>
+        <p id="numberValidator"></p>
+        <div class="multipleChoices">
+            <p>choose a number</p>
+            <div class="choice1">
+                <input type="radio" name="userChoice" id="opt1">
+                <label id="num1" for="opt1"></label>
+            </div>
+            <div class="choice2">
+                <input type="radio" name="userChoice" id="opt2">
+                <label id="num2" for="opt2"></label>
+            </div>
+            <div class="choice3">
+                <input type="radio" name="userChoice" id="opt3">
+                <label id="num3" for="opt3"></label>
+            </div>
+            <div class="choice4">
+                <input type="radio" name="userChoice" id="opt4">
+                <label id="num4" for="opt4"></label>
+            </div>
+            <button type="submit" id="SubmitBtn">Submit</button>
+        </div>
+        <p id="score">
+            <span id="correct">correct answers: 0</span><br>
+            <span id="wrong">wrong answers: 0</span>
+        </p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
