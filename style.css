@@ -1,88 +1,66 @@
 *{
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
+    font-family: system-ui;
 }
 main{
-    height: 100vh;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1.2dvw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 h1{
-    font-size: 3.5em;
-    padding: 20px 0 10px 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.1rem;
+    margin: 20px 0;
 }
-p.instructions{
-    font-size: 2em;
-    font-family: 'MyriadPro',sans-serif;
-    font-weight: bolder;
-}
-li{
-    font-size: 1.5em;
-    font-family:  Helvetica, serif;
-    line-height: 1.5;
+.instructions{
+    font-weight: 600;
 }
 ul{
-    padding: 10px 0 20px 0;
+    padding: 20px 0;
+    text-align: left;
 }
 button{
-    font-size: 1.3em;
-    padding: 5px 20px;
-    background-color: #00aeef;
-    border: 1px solid #000;
-    border-radius: 7px;
+    background-color: #3a6fdb;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
 }
-button:active{
-    position: relative;
-    top: 1px;
+.multipleChoices{
+    width: 250px;
+    height: auto;
+    padding: 10px 15px;
+    color: white;
+    background-color: #0a3ea6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+    margin: 20px 0;
 }
-div.multipleChoices{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #004498;
-    padding: 15px 25px;
-    margin-top: 10px;
-}
-div.multipleChoices>p, button{
-    font-family: 'Agency FB',sans-serif;
-    font-weight: 600;
-}
-div.multipleChoices>p{
-    font-size: 2em;
-    color: #fff;  
-    margin-bottom: 7px;  
-}
-div.multipleChoices, div[class*="choice"]{
-    border-radius: 20px;
-}
-div[class*="choice"]{
+.multipleChoices >div {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    background-color: white;
+    padding: 0 2px;
     display: flex;
     align-items: center;
-    height: 35px;
-    width: 280px;
-    background-color: #fff;
-    border: 1px solid #000;
-    margin-bottom: 15px;
-    padding: 5px;
+    justify-content: flex-start;
+    padding: 12px 3px;
+    color: black;
 }
-div[class*="choice"]:hover,button[type="submit"]:hover{
-    box-shadow: 0px 0px 7px #fff;
-}
-input{
-    width: 25px;
-    height: 20px;
-}
+.multipleChoices >div:hover{
+    box-shadow: 0px 0px 5px white;
+} 
 label{
-    font-weight: 600;
     width: 100%;
     text-align: center;
-}
-label,p#score{
-    font-size: 1.2em;
 }
 p#score{
     padding: 10px;
